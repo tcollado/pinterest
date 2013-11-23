@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pin.description %>
+</p>
+<div style="max-width:200px">
+	<p>
+	  <strong>Photo:</strong>
+	  <%= image_tag(@pin.photo) %>
+	</p>	
+
+</div>
+
+
+<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %>
