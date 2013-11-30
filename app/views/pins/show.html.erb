@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @pin.description %>
-</p>
-<div>
-	<p>
-	  <strong>Photo:</strong>
-	  <%= image_tag(@pin.photo) %>
-	</p>	
+<div class="container">
 
+	  <strong>Description:</strong>
+	  <%= @pin.description %>
+	  <br>
+	  <strong>Photo:</strong>
+	  <br>
+	  <%= image_tag(@pin.photo) %>
+	  <br>
+	<div class="btn-group">
+		<%= link_to 'Edit', edit_pin_path(@pin), :class =>'btn btn-info' %>
+		<%= link_to 'Back', pins_path, :class =>'btn btn-info' %>
+	</div>
 </div>
 
-
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
