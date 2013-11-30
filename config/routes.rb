@@ -3,7 +3,7 @@ Pinterest::Application.routes.draw do
 
   devise_for :users
   get "pages/index"
-  root 'pages#index'
+  root 'pins#index'
   get 'aboutus'=> 'pages#aboutus'
 
   # The priority is based upon order of creation: first created -> highest priority.

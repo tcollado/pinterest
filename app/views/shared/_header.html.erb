@@ -14,8 +14,10 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li><a href="#">GOOGLE</a></li>
-				<li><a href="http://www.google.cl">Google</a></li>
+				<% unless current_user.nil? %>
+				<li><a href="<%= pins_path %>">Pins</a></li>
+				<li><a href="<%= new_pin_path %>">New Pin</a></li>
+				<% end%>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<% if current_user.nil? %>
