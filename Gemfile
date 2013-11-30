@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
 # crear usuario, paquete completo.
+gem 'simple_form'
+# crear usuario, paquete completo.
 gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
