@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem 'rails_12factor'
+
 # crear usuario, paquete completo.
 gem 'simple_form'
 # crear usuario, paquete completo.
