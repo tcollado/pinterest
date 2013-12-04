@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'carrierwave'
 # crear usuario, paquete completo.
 gem 'simple_form'
 # crear usuario, paquete completo.
