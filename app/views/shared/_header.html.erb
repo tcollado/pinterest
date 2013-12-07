@@ -17,6 +17,7 @@
 				<% unless current_user.nil? %>
 				<li><a href="<%= pins_path %>">Pins</a></li>
 				<li><a href="<%= new_pin_path %>">New Pin</a></li>
+				<li><a href="<%= user_path(current_user) %>">Mis Pins</a></li>
 				<% end%>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">

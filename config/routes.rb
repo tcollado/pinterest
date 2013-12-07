@@ -2,6 +2,8 @@ Pinterest::Application.routes.draw do
   resources :pins
 
   devise_for :users
+  resources :users, :only => ['show', 'index']
+
   get "pages/index"
   root 'pins#index'
   get 'aboutus'=> 'pages#aboutus'
